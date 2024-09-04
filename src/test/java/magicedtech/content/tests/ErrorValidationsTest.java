@@ -29,7 +29,7 @@ public class ErrorValidationsTest extends BaseTest {
 		productCatalogue.addProductToCart(productName);
 		Cart cart = productCatalogue.goToCartPage();
 		boolean resultOne = cart.isProductAvailable(productName);
-		Assert.assertFalse(resultOne);
+		Assert.assertTrue(resultOne);
 	}
 
 }
